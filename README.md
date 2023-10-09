@@ -5,9 +5,9 @@ Mencione sobre algunos ejemplos que tome del libro <b>Java Puzzlers: Traps, Pitf
 <p align="justify">
 Siempre que trabajemos con operaciones numéricas o con conversiones en nuestros programas hay posibilidades de que suceda un overflow (desbordamiento) cuando el resultado de dicha operación sobrepase la capacidad mínima o máxima de la variable que usemos para contener ese resultado. Los siguientes listados ejemplifican el uso de estos operadores.
 </p>
-<h3>Fig 1. El primer ejemplo sin la palabra unchecked.</h3>
+<b>Fig 1. El primer ejemplo sin la palabra unchecked.</b>
 <img src="Puzzle4_unchecked.png">
-<h3>Fig 2. El segundo ejemplo sin la palabra unchecked.</h3>
+<b>Fig 2. El segundo ejemplo sin la palabra unchecked.</b>
 <img src="Puzzle6_unchecked.png">
 <p>
 En el primer caso el compilador envía el siguiente error:

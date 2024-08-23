@@ -3,12 +3,12 @@
 Mencione sobre algunos ejemplos que tome del libro <b>Java Puzzlers: Traps, Pitfalls, and Corner Cases</b> de <i>Joshua Bloch</i> y <i>Neal Gafter</i> publicado por Addison Wesley Professional en el año 2005 donde vienen curiosidades y trucos acerca de la programación con Java, Los siguientes ejemplos se encuentran en el libro y requieren el uso en C# de los operadores checked y unchecked para controlar la comprobación de overflow en operaciones aritméticas y conversiones.
 </p>
 <p align="justify">
-Siempre que trabajemos con operaciones numéricas o con conversiones en nuestros programas hay posibilidades de que suceda un overflow (desbordamiento) cuando el resultado de dicha operación sobrepase la capacidad mínima o máxima de la variable que usemos para contener ese resultado. Los siguientes listados ejemplifican el uso de estos operadores.
+Siempre que trabajemos con operaciones numéricas o con conversiones en nuestros programas hay posibilidades de que suceda un overflow (desbordamiento) cuando el resultado de dicha operación sobrepase la capacidad mínima o máxima de la variable que usemos para contener ese resultado.
 </p>
-<b>Fig 1. El primer ejemplo sin la palabra unchecked.</b>
-<img src="images/Puzzle4_unchecked.png">
-<b>Fig 2. El segundo ejemplo sin la palabra unchecked.</b>
-<img src="images/Puzzle6_unchecked.png">
+<ol>
+<li>El primer ejemplo sin la palabra unchecked.</li>
+<li>El segundo ejemplo sin la palabra unchecked.</li>
+</ol>
 <p>
 En el primer caso el compilador envía el siguiente error:
 </p>
@@ -27,7 +27,7 @@ Puzzle6.cs(10,30): error CS0221: Constant value `-1' cannot be converted to a `b
 Debido a que en los dos listados el overflow puede ser comprobado en tiempo de compilación, en C# de forma predeterminada todo el código asignado a constantes es comprobado aunque este dentro de un bloque unchecked, y para las variables si el overflow ocurre en tiempo de ejecución el programa lanza una OverflowException excepto que sea suprimida usando unchecked.
 </p>
 <p>
-Por lo tanto para compilar los listados, debemos de usar un bloque unchecked en la asignación de las siguientes variables en el primer listado:
+Por lo tanto para compilar los ejemplos, debemos de usar un bloque unchecked en la asignación de las siguientes variables en el primer listado:
 </p>
 <pre>
 unchecked{
